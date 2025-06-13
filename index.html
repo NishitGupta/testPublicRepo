@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Sample Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .profile {
+            margin: 40px 20px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: auto;
+            width: 100%;
+            padding: 10px;
+            background-color: #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Web Page</h1>
+</header>
+
+<div class="profile">
+    <h2>Hello, I'm Jane Doe</h2>
+    <p>Web developer and designer with a passion for building beautiful user interfaces.</p>
+    <button onclick="sayHello()">Click Me</button>
+</div>
+
+<footer>
+    &copy; 2025 Jane Doe. All rights reserved.
+</footer>
+
+<script>
+    function sayHello() {
+        alert("Thanks for visiting my page!");
+    }
+</script>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DcZ000002GqT0',
+				'UKG_Web_Assistant',
+				'https://ukgsf--pdsnishit.sandbox.my.site.com/ESWUKGWebAssistant1749760156857',
+				{
+					scrt2URL: 'https://ukgsf--pdsnishit.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://ukgsf--pdsnishit.sandbox.my.site.com/ESWUKGWebAssistant1749760156857/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+</body>
+</html>
