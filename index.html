@@ -93,6 +93,11 @@
 					scrt2URL: 'https://ukgsf--pdsnishit.sandbox.my.salesforce-scrt.com'
 				}
 			);
+			setTimeout(function() {
+				if (window.embeddedservice_bootstrap) {
+					embeddedservice_bootstrap.openChat();
+				}
+			}, 5000);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
@@ -101,5 +106,6 @@
 <script type='text/javascript' src='https://ukgsf--pdsnishit.sandbox.my.site.com/ESWUKGWebagent1749808753079/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
+
 
 
