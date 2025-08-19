@@ -92,22 +92,24 @@
 				{
 					scrt2URL: 'https://ukgsf--pdsnishit.sandbox.my.salesforce-scrt.com'
 				}
-				onInit: function() {
-						// Wait 5 seconds after full initialization, then open the chat
-						setTimeout(function() {
-							if (window.embeddedservice_bootstrap) {
-								embeddedservice_bootstrap.openChat();
-							}
-						}, 5000);
 			);
 		} catch (err) {
 			console.error('Error loading Embedded Messaging: ', err);
 		}
-		};	
+		};
+	window.addEventListener("load", function() {
+    // Wait a moment for the chat widget to initialize
+    setTimeout(function() {
+      if (window.embeddedservice_bootstrap) {
+        embeddedservice_bootstrap.openChat();
+      }
+    }, 5000); // 5 second delay before auto-popup
+  });
 </script>
 <script type='text/javascript' src='https://ukgsf--pdsnishit.sandbox.my.site.com/ESWUKGWebagent1749808753079/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
+
 
 
 
